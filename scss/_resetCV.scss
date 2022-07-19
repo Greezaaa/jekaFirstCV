@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.flow {
+  --flow-space: 1em;
+}
+.flow > * + * {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+}
